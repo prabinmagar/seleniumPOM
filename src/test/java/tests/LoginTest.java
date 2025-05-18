@@ -13,7 +13,7 @@ public class LoginTest extends Base {
         loginPage.enterUsername("Admin");
         loginPage.enterPassword("admin123");
         loginPage.clickLoginBtn();
-
+        System.out.println("Dev");
         String pageTitle = driver.getTitle();
         Assert.assertEquals(pageTitle, "OrangeHRM");
     }
